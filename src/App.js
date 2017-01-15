@@ -24,7 +24,7 @@ class App extends Component {
             <SelfStyledButton> Default button </SelfStyledButton>
           </div>    
           <div style={{margin:'1em'}}>
-            <Alert>Hello!</Alert>
+            <Alert>Hello! Namaste. नमस्ते. నమస్కారం. </Alert>
           </div>      
           <div style={{margin:'1em'}}>
             <Alert error>Oops!</Alert>

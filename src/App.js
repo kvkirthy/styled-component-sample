@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
-import Title from './Title.js';
+import {Title, SelfStyledButton} from './theme1.js';
 import './App.css';
-import styled from 'styled-components';
 
 class App extends Component {
   render() {
-    let AnotherTitle = styled(Title) `
-                        height: 150px;
-                        padding: 20px;
-                        background-color: darkblue;`;
+    
     return (
       <div className="App">
-        <AnotherTitle primary className="green-text"></AnotherTitle>
-        <p className="App-intro">
+        <Title primary text="Styled-Components Demo" ></Title>
+        <div className="App-intro">
+          <SelfStyledButton primary text="Sample Button 1" />
           To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        </div>
       </div>
     );
   }

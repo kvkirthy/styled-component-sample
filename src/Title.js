@@ -3,20 +3,22 @@ import './App.css';
 import logo from './logo.svg';
 
 
-export default class Title extends React.Component {
+export default class TitleStateLessComponent extends React.Component {
     constructor(props) {
         super(props);
         this.props = props;
     }
 
-
-
     render() {
 
         return (
-            <div className={this.props.className}>
+            <div className={this.props.className}>             
+             <div>
                 <img src={logo} className="App-logo" alt="logo" />
-                <h2>React Styles Sample</h2>
+             </div> 
+             <div>            
+                <h2>{this.props.text}</h2>
+             </div>
             </div>
         );
     }
